@@ -14,10 +14,10 @@ export default function BlogPostItemWrapper(props) {
       {(
         <div className="docusaurus-blog-comments">
           <Giscus
-            repo="akmalovaa/akmalov.com"
-            repoId="R_kgDOI0gPCg"
+            repo="SantaSpeen/santaspeen.ru-blog"
+            repoId="R_kgDOK6Fd_Q"
             category="General"
-            categoryId="DIC_kwDOI0gPCs4CXR_A"
+            categoryId="DIC_kwDOK6Fd_c4Cbwpe"
             mapping="pathname"
             reactionsEnabled="1"
             emitMetadata="0"

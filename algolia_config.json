@@ -1,10 +1,10 @@
 {
-  "index_name": "prod_akmalov",
+  "index_name": "prod_santaspeen",
   "start_urls": [
-    "https://akmalov.com/"
+    "https://santaspeen.ru/"
   ],
   "sitemap_urls": [
-    "https://akmalov.com/sitemap.xml"
+    "https://santaspeen.ru/sitemap.xml"
   ],
   "sitemap_alternate_links": true,
   "stop_urls": [],

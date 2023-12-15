@@ -8,13 +8,13 @@ const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Artur Akmalov',
+  title: 'SantaSpeen',
   tagline: 'Personal Blog',
   favicon: 'img/favicon.ico',
-  url: 'https://akmalov.com',
+  url: 'https://santaspeen.ru',
   baseUrl: '/',
-  organizationName: 'akmalovaa',
-  projectName: 'akmalov.com',
+  organizationName: 'santaspeen',
+  projectName: 'santaspeen.ru',
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
@@ -32,12 +32,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/akmalovaa/akmalov.com/tree/main/',
+            'https://github.com/SantaSpeen/santaspeen.ru-blog/tree/main/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 0,
-          editUrl: 'https://github.com/akmalovaa/akmalov.com/tree/main/',
+          editUrl: 'https://github.com/SantaSpeen/santaspeen.ru-blog/tree/main/',
           feedOptions: {
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
@@ -51,10 +51,10 @@ const config = {
             },
           },
         },
-        gtag: {
-          trackingID: process.env.GOOGLE_ANALYTICS_TAG_ID,
-          anonymizeIP: true,
-        },
+        // gtag: {
+        //   trackingID: process.env.GOOGLE_ANALYTICS_TAG_ID,
+        //   anonymizeIP: true,
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -66,9 +66,9 @@ const config = {
     ({
       image: 'img/logo.svg',
       navbar: {
-        title: 'Akmalov Artur',
+        title: 'SantaSpeen',
         logo: {
-          alt: 'Akmalov Artur',
+          alt: 'SantaSpeen',
           src: 'img/logo.svg',
         },
         items: [
@@ -81,7 +81,7 @@ const config = {
           },
           { to: "/about", label: "About", position: "right" },
           {
-            href: "https://github.com/akmalovaa",
+            href: "https://github.com/SantaSpeen",
             position: "right",
             className: "header-github-link",
             "aria-label": "GitHub",
@@ -90,7 +90,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Akmalov Artur`,
+        copyright: `Copyright © ${new Date().getFullYear()} SantaSpeen`,
       },
       algolia: {
         appId: process.env.ALGOLIA_APP_ID,

@@ -7,4 +7,4 @@ Allow: /docs/
 Allow: /assets/
 Allow: /img/
 Allow: /about
-Sitemap: https://akmalov.com/sitemap.xml
+Sitemap: https://santaspeen.ru/sitemap.xml
