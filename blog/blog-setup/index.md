@@ -5,12 +5,12 @@ description: Описание
 image: ./logo.png
 tags: [blog, javascript, nginx]
 keywords: [docker, linux]
-date: 2023-11-29
+date: 2023-12-15
 ---
 
 Описание для предварительного просмотра на главной странице
 
-[![lan cache server](./logo.png)](/blog/blog-setup)
+[![logo](./logo.png)](/blog/blog-setup)
 <!--truncate-->
 
 ### Введение

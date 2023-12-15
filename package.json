@@ -1,8 +1,8 @@
 {
-  "name": "akmalov.com",
+  "name": "santaspeen.ru",
   "version": "1.0.0",
   "private": true,
-  "https": "https://akmalov.com",
+  "https": "https://santaspeen.ru",
   "scripts": {
     "deploy-ghp": "gh-pages -d dist",
     "docusaurus": "docusaurus",

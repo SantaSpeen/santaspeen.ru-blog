@@ -1,13 +1,6 @@
 import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import TopicsSection from '../components/home/TopicsSection';
-import HomeHeader from "../components/home/HomeHero";
-import AboutSite from "../components/home/AboutSite";
-
-import styles from './index.module.css';
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
