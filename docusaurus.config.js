@@ -92,12 +92,12 @@ const config = {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} SantaSpeen`,
       },
-      algolia: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_API_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
-        searchParameters: {},
-      },
+      // algolia: {
+      //   appId: process.env.ALGOLIA_APP_ID,
+      //   apiKey: process.env.ALGOLIA_API_KEY,
+      //   indexName: process.env.ALGOLIA_INDEX_NAME,
+      //   searchParameters: {},
+      // },
       prism: {
         additionalLanguages: ['bash', 'diff', 'json'],
         // darkTheme: darkCodeTheme,
