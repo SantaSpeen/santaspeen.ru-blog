@@ -100,11 +100,12 @@ const config = {
       // },
       prism: {
         additionalLanguages: ['bash', 'diff', 'json'],
-        // darkTheme: darkCodeTheme,
+        darkTheme: darkTheme,
+        lightTheme: lightTheme
       },
       colorMode: {
         defaultMode: 'dark',
-        disableSwitch: true,
+        disableSwitch: false,
         respectPrefersColorScheme: false,
       },
     }),
