@@ -63,12 +63,16 @@
   width: 24px;
   height: 24px;
   display: flex;
+}
+
+[data-theme='light'] .header-github-link {
   background: url("/img/github.svg") 0 center / 25px 25px no-repeat;
 }
 
-p a {
-  --ifm-heading-vertical-rhythm-bottom: 0;
+[data-theme='dark'] .header-github-link {
+  background: url("/img/githubL.svg") 0 center / 25px 25px no-repeat;
+}
+
+.markdown li a, .markdown p a {
   text-decoration: underline dotted;
-  font-size: '10px';
-  margin: "0"
 }
