@@ -8,15 +8,14 @@ const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'SantaSpeen',
+  title: process.env.SITE_TITLE,
   tagline: 'Personal Blog',
   favicon: 'img/favicon.ico',
-  url: 'https://santaspeen.ru',
+  url: process.env.SITE_URL,
   baseUrl: '/',
-  organizationName: 'santaspeen',
-  projectName: 'santaspeen.ru',
+  organizationName: process.env.SITE_ORANIZATION_NAME,
+  projectName: process.env.SITE_PROJECT_NAME,
   trailingSlash: false,
-  deploymentBranch: 'gh-pages',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
@@ -51,10 +50,10 @@ const config = {
             },
           },
         },
-        // gtag: {
-        //   trackingID: process.env.GOOGLE_ANALYTICS_TAG_ID,
-        //   anonymizeIP: true,
-        // },
+        gtag: {
+          trackingID: process.env.COUNTER_GOOGLE,
+          anonymizeIP: true,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -92,12 +91,6 @@ const config = {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} SantaSpeen`,
       },
-      // algolia: {
-      //   appId: process.env.ALGOLIA_APP_ID,
-      //   apiKey: process.env.ALGOLIA_API_KEY,
-      //   indexName: process.env.ALGOLIA_INDEX_NAME,
-      //   searchParameters: {},
-      // },
       prism: {
         additionalLanguages: ['bash', 'diff', 'json'],
         darkTheme: darkTheme,
@@ -108,6 +101,12 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_API_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        searchParameters: {},
+      },
     }),
   plugins: [
     [
@@ -115,6 +114,9 @@ const config = {
       /** @type {import('docusaurus-plugin-sass').Options} */
       {}
     ],
+    ['docusaurus-plugin-yandex-metrica', {
+      counterID: process.env.COUNTER_YANDEX,
+    }],
   ]
 };
 

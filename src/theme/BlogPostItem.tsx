@@ -5,19 +5,26 @@ import Giscus from "@giscus/react";
 
 export default function BlogPostItemWrapper(props) {
   const { isBlogPostPage } = useBlogPost();
+  
   if (!isBlogPostPage) {
     return <BlogPostItem {...props} />;
   }
+  
+  const repo = "SantaSpeen/santaspeen.ru-blog"
+  const repoId = "R_kgDOK6Fd_Q"
+  const category = "General"
+  const categoryId = "DIC_kwDOK6Fd_c4Cbwpe"
+
   return (
     <>
       <BlogPostItem {...props} />
       {(
         <div className="docusaurus-blog-comments">
           <Giscus
-            repo="SantaSpeen/santaspeen.ru-blog"
-            repoId="R_kgDOK6Fd_Q"
-            category="General"
-            categoryId="DIC_kwDOK6Fd_c4Cbwpe"
+            repo={repo}
+            repoId={repoId}
+            category={category}
+            categoryId={categoryId}
             mapping="pathname"
             reactionsEnabled="1"
             emitMetadata="0"
