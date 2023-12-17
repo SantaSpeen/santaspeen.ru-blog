@@ -150,7 +150,7 @@ sudo certbot --nginx
 Давайте начнем с загрузки необходимых файлов для вашего блога. Вы можете воспользоваться командой git clone для получения исходного кода блога:
 
 ```bash
-git clone https://github.com/SantaSpeen/santaspeen.ru-blog.git
+git clone https://github.com/SantaSpeen/santaspeen.ru-blog.git -b v1-ready
 ```
 
 ### Установка зависимостей
