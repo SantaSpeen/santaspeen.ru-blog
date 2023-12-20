@@ -1,0 +1,8 @@
+{
+  "label": "Сетевые сервисы",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Тут хранится разная инфа по поводу настройки сервисов по типу samba, nginx и т.д."
+  }
+}
