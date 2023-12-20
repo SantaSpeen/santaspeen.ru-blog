@@ -1,0 +1,8 @@
+{
+  "label": "Остальное",
+  "position": 99,
+  "link": {
+    "type": "generated-index",
+    "description": "То, что не попало в какую-либо катигорию"
+  }
+}
